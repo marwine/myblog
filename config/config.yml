@@ -1,5 +1,5 @@
 --
-title: Mike Arwine
+name: Mike Arwine
 tagline: what if, what else, why not
 login: <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
 password: <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
