@@ -1,0 +1,77 @@
+/* Insert your custom theme here */
+body { background-color: #fdfdfd; }
+
+header, footer { font-family: "times new roman", times, serif; letter-spacing: 3px; text-align: center; text-transform: uppercase; width:800px; }
+header h1 { font-size: 50px; font-weight: normal; line-height: 65px; margin: 10px 0 5px; }
+header h1 a { color: #000; text-decoration: none; }
+header h1 a:hover { text-decoration: underline; }
+header p { border-bottom: 2px solid #000; border-top: 1px solid #000; font-size: 13px; line-height: 26px; margin: 0 5px; padding: 0px; }
+footer { margin-bottom: 20px; }
+footer p { border-bottom: 2px solid #000; border-top: 1px solid #000; font-size: 10px; letter-spacing: 1px; margin: 0 5px; padding: 12px 0; }
+footer a:link { color: #000; }
+footer a:visited { color: #777; }
+footer a:hover, footer a:active { color: #00F; }
+
+section { margin: 0px auto; overflow: hidden; width: 800px; }
+section a:link { color: #000; }
+section a:visited { color: #000; }
+section a:hover, section a:active { color: #00F; }
+
+article { float: left; margin-top: 30px; padding: 0 5px; width: 600px; }
+article h1, article h2, article h3, article h4, article h5, article h6 { font-family: 'times new roman',times,serif; font-weight: 400; margin-bottom: -6px; }
+article h1 { font-size: 30px; margin: 0; }
+article h2 { font-size: 20px; }
+article p, article ol, article ul { font-family: arial; font-size: 14px; line-height: 20px; }
+
+article blockquote { font-style: italic; }
+article code { background-color: #eee; font-family: "courier new",courier,monospace; }
+article p code { padding: 2px 4px; }
+article pre { background-color: #eee; line-height: 16px; overflow-x: auto; padding: 10px; }
+article pre code { background: none; }
+article hr { background-color: #888; border: 0; height: 1px; margin: 25px auto; width: 100px; }
+
+article .weak { color: #666; font-size: .85em; }
+article .listHeading { margin-bottom: -10px; }
+article p#articleDate { font-family: 'times new roman',times,serif; font-size: 15px; font-style: italic; margin: 6px 0 -3px; }
+
+aside { font-family: "times new roman",times,serif; font-size: 14px; float: right; line-height: 25px; margin: 60px 0; text-align: center; width: 180px; }
+aside h2 { font-size: 14px; letter-spacing: 2px; margin: 5px 0; text-transform: uppercase; }
+aside p { margin: 0 0 20px; }
+aside ul { list-style: none; margin: 0 0 20px; padding: 0; }
+
+div.project { border-bottom: 1px solid #000; margin: 15px 0; overflow: hidden; }
+div.project:last-child { border-bottom: none; }
+
+div.project h2 { margin-top: 0; }
+div.project img { border: 2px solid #555; float: left; margin: 12px 10px 10px 0; width: 250px; }
+div.project img:hover { border: 2px solid #00f; }
+
+div.project div.description { clear: both; }
+div.project div.details { margin-left: 264px; }
+
+form#contactForm div.wrapper { font-family: arial; overflow: hidden; width: 400px; }
+form#contactForm div.field { margin: 10px 0; overflow: hidden; width: 400px; }
+
+form#contactForm div.text input { border: 1px solid #333; font-size: 14px; float: left; margin: 0; padding: 5px; width: 200px; }
+form#contactForm div.text input.error { border: 1px solid #900; }
+form#contactForm label { clear: left; float: left; margin: 4px 0; width: 100px; }
+form#contactForm textarea { border: 1px solid #333; clear: left; float: left; height: 200px; margin-top: 5px; padding: 5px; width: 300px; }
+form#contactForm textarea.error { border: 1px solid #900; }
+
+form#contactForm div#subjectField { display: none; }
+
+form#contactForm div.action { overflow: hidden; width: 310px; }
+form#contactForm div.action input { background-color: #aaa; border: 1px solid #333; clear: left; color: #fff; float: right; font-size: 14px; font-weight: bold; margin: 5px 0 20px; padding: 5px 7px; }
+form#contactForm div.action input:hover { cursor: pointer; text-decoration: underline; }
+
+form#contactForm p#jsNote { color: #900; }
+form#contactForm label.error { color: #900; display: block; float: none; font-size: 12px; margin-left: 100px; text-align: center; width: 200px; }
+form#contactForm div.textarea label.error { color: #900; display: block; float: none; font-size: 12px; margin-left: 0; text-align: center; width: 312px; }
+
+p.callout { background-color: #666; border: 3px solid #000; float: right; margin: 0; padding: 4px 7px; }
+p.callout a { color: #fff; }
+div#contactDetails { display: none; }
+p#printNote { display: none; }
+
+ul.feeds li { float: left; width: 200px; }
+ul.feeds { line-height: 22px; margin-bottom: 15px; overflow: hidden; width: 600px; }	

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title><%= html_title yield(:title) %></title>
+    <%= csrf_meta_tag %>
+    <%= stylesheet_link_tag 'application' %>
+    <meta name="author" content="<%= CONFIG['name'] %>">
+    <link href="/posts.rss" rel="alternate" title="RSS" type="application/rss+xml" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css' />
+  </head>
+
+  <body>
+    <section>
+        <header>
+          <h1><%= link_to CONFIG['title'], root_url %></h1>
+          <p><%= CONFIG['tagline'].html_safe %></p>
+        </header>
+        <aside>
+          <ul>
+            <% if CONFIG['twitter'] %>
+              <li><%= link_to '@' + CONFIG['twitter'], 'http://twitter.com/' + CONFIG['twitter'] %></li>
+            <% end %>
+            <% if CONFIG['github'] %>
+              <li><%= link_to 'github', 'https://github.com/' + CONFIG['github'] %></li>
+            <% end %>
+            <% if CONFIG['email'] %>
+              <li><%= link_to 'email me', "mailto:#{CONFIG['email']}?subject:Howdy!" %></li>
+            <% end %>
+            <% if CONFIG['site1'] %>
+              <li><%= link_to CONFIG['site1'], 'http://www.hashtagg.in' %></li>
+            <% end %>
+            <% if CONFIG['site2'] %>
+              <li><%= link_to CONFIG['site2'], 'http://www.mikearwine.com' %></li>
+            <% end %>
+            <% if CONFIG['instagram'] %>
+              <li><%= link_to "instagram", 'http://instagram.com/' + CONFIG['twitter'] %></li>
+            <% end %>
+            <li><%#= link_to 'rss feed', '/posts.rss' %></li>
+          </ul>
+        </aside>
+        <time><% if @post && @post.created_at %>Posted <%= @post.created_at.to_formatted_s(:day_month_year) %><% else %><%= Time.now.to_formatted_s(:day_month_year) %><% end %>
+        </time>
+        <% if notice %><span class="notice"><%= notice %></span><% end %>
+        <%= yield %>
+      
+
+    <%= javascript_include_tag 'application' %>
+
+    <% if CONFIG['google_analytics_id'] %>
+      <!-- Google Analytics -->
+      <script>
+        var _gaq=[['_setAccount','<%= CONFIG['google_analytics_id'] %>'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
+    <% end %>
+  </section>
+  </body>
+</html>
