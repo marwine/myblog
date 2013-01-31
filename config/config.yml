@@ -1,11 +1,11 @@
-title:               Mike Arwine
-tagline:             what if, what else, why not
-login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
-password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
-name:                Mike Arwine
-twitter:             michaelarwine
-instagram:					 michaelarwine
-email:               marwine@gmail.com
-site1:							 hashtagg.in
-site2:							 mikearwine.com
-google_analytics_id: YOUR_GA_ID
+title:								Mike Arwine
+tagline:							what if, what else, why not
+login:								<%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
+password:							<%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
+name:									Mike Arwine
+twitter:							michaelarwine
+instagram:						michaelarwine
+email:								marwine@gmail.com
+site1:								hashtagg.in
+site2:								mikearwine.com
+google_analytics_id:	YOUR_GA_ID
