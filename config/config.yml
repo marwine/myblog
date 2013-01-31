@@ -1,4 +1,3 @@
---
 name: Mike Arwine
 tagline: what if, what else, why not
 login: <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
@@ -7,7 +6,7 @@ name: Mike Arwine
 twitter: michaelarwine
 instagram: michaelarwine
 email: marwine@gmail.com
-github: marwine
+githubz: marwine
 site1: hashtagg.in
 site2: mikearwine.com
 google_analytics_id: YOUR_GA_ID
