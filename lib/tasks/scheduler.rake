@@ -1,5 +1,5 @@
 desc "This task is called by the Heroku cron add-on"
 task :call_page => :environment do
-   uri = URI.parse('http:http://www.mikearwine.com/')
+   uri = URI.parse('http://www.mikearwine.com/')
    Net::HTTP.get(uri)
  end
