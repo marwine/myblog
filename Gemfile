@@ -13,6 +13,7 @@ gem 'redcarpet'
 # gem 'bcrypt-ruby', '~> 3', require: 'bcrypt'
 gem 'stringex'
 gem 'kaminari'
+gem 'newrelic_rpm'
 
 group :production do
   # gem 'newrelic_rpm', '~> 3'
